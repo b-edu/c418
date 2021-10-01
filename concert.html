@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert | C418</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="shortcut icon" href="assets/img/disk.webp" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="nav">
+        <a href="index.html" class="nav-link nav-title">C418</a>
+        <a href="concert.html" class="nav-link">Concert</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="past-work.html" class="nav-link">Past Work</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+        <span class="title">Album Gamma Concert</span>
+        <br>
+        <img src="assets/img/disk.webp" alt="Minecraft music disk icon">
+        <br>
+        <p>Come attend the unveiling of the newest music for Minecraft!</p>
+        <h2>Location</h2>
+        <p>
+            Meet us at the Orange County Convention Center, in Orlando, Florida.
+        </p>
+        <p>
+            9400 Universal Blvd<br>
+            Orlando, FL 32819
+        </p>
+        <h2>Price</h2>
+        <p>
+            Tickets cost <b>$50</b> each, tax included.<br>100% of all profit will be donated to the <i>Raspberry Pi Foundation</i>, a UK-based charity that helps bring the power of computing and digital making into the hands of people all over the world.<br>Learn more about them <a href="https://raspberrypi.org/about/" target="_blank">here!</a>
+        </p>
+        <br>
+        <!-- Alert box -->
+        <div class="alert">
+            <span class="alert-title">COVID-19 POLICY</span>
+            <p class="alert-body">Here's how we are keeping you safe:</p>
+            <ul class="alert-body">
+                <li>This event will be held outdoors</li>
+                <li>Masks are required to be worn by all attendees and staff</li>
+                <li>A valid vaccination status must be show before entry</li>
+            </ul>
+        </div>
+        <hr>
+        <h2>Purchase Tickets</h2>
+        <form class="purchase-form">
+            <!-- Fieldsets are boxes that contain multiple form elements -->
+            <fieldset>
+                <!-- Legends are the titles that show up on the fieldset box -->
+                <legend>Tickets</legend>
+                <p>
+                    <label for="ticket_amount">Number of tickets</label>
+                    <input type="number" name="ticket_amount" id="ticket_amount" placeholder="1">
+                </p>
+                <p>
+                    <label for="ticket_amount">Concert date</label>
+                    <select name="ticket_date" id="ticket-date">
+                        <option value="2022-03-14">2022-03-14</option>
+                        <option value="2022-03-15">2022-03-15</option>
+                        <option value="2022-03-16">2022-03-16</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="you@email.com">
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Payment Information</legend>
+                <p>
+                    <label for="card_type">Card type</label>
+                    <select name="card_type" id="card_type">
+                        <option value="amex">American Express</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="card_number">Card number</label>
+                    <input type="number" name="card_number" id="card_number" type="tel"> <!-- type="tel" asks mobile devices to use a numeric keypad when typing in -->
+                </p>
+                <p>
+                    <label for="card_expiration"><b>Card expiration:</b></label>
+                    <br>
+                    <label for="card_expiration_month">Month: </label><input type="number" name="card_expiration_month" id="card_expiration_month" placeholder="06">
+                    <br>
+                    <label for="card_expiration_year">Year: </label><input type="number" name="card_expiration_year" id="card_expiration_year" placeholder="2025">
+                </p>
+            </fieldset>
+            <br>
+            <button type="submit">Purchase</button>
+        </form>
+    </div>
+</body>
+</html>

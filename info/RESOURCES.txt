@@ -1,0 +1,5 @@
+https://tailwindcss.com/docs/customizing-colors#color-palette-reference (didn't use this CSS framework, just the colors they have picked to go well together)
+https://www.w3schools.com/csS/css3_flexbox.asp
+https://www.w3schools.com/html/html_forms.asp
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout

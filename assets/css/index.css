@@ -1,0 +1,196 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/prodigy-sans.min.css");
+/* Imports the font "Prodigy Sans" */
+
+/************** RESET MARGINS **************/
+body,p,h3 {
+    /* Margins on these elements mess up some other formatting, so I'm just resetting them here so I can redefine them individually */
+    margin: 0;
+}
+
+/************** PAGE **************/
+body {
+    font-family: 'Prodigy Sans', sans-serif;
+    background: #0F172A;
+    color: white;
+}
+
+.content {
+    /* Adds extra padding around all content so it doesn't bleed into the edges of the screen */
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+
+hr {
+    /* Give the <hr> element a larger margin to be used as a separator */
+    border-color: #64748B;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+hr.small-margins {
+    /* This is used as a separator for smaller areas */
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+/************** NAVBAR **************/
+.nav {
+    background: #1E293B;
+
+    /* Set the display to `flex` so elements stack after each other, and will break if the screen is too small to fit them in a row */
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 1.5rem;
+    color: white;
+}
+
+.nav-title, .nav-link {
+    /* Remove the underline from links */
+    text-decoration: none;
+
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+}
+
+.nav-title {
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    /* Change the background color when hovering over a navbar tab */
+    background: #334155;
+}
+
+/************** TEXT **************/
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+p,ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #c4c4c4;
+}
+
+/************** BUTTONS **************/
+.btn {
+    /* Style the <a> tag into a button */
+    padding: 10px 20px;
+    background: #3B82F6;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.btn:hover {
+    /* Change the background on hover */
+    background: #60A5FA;
+
+    /* Set the color to white again, since `a:hover` overrides this */
+    color: white;
+}
+
+a {
+    /* Make links more readable on the dark background */
+    color: #3B82F6;
+}
+
+a:hover {
+    /* Give links a different color on hover */
+    color: #60A5FA;
+}
+
+/************** FORMS **************/
+.purchase-form {
+    max-width: 500px;
+}
+
+.purchase-form fieldset {
+    border-color: #334155;
+    padding-bottom: .8rem;
+}
+
+/************** COLUMNS **************/
+.about-column-wrap {
+    /* The container for the column layout on the "About" page */
+    display: flex;
+    width: 100%;
+}
+
+.about-column-text {
+    /* Give this column a `min-width` so it doesn't get squished into nothing on smaller screens */
+    min-width: 300px;
+
+    padding-right: 1.5rem;
+}
+
+.about-column-text p {
+    margin-bottom: 1rem;
+}
+
+/************** IMAGES **************/
+.about-img {
+    width: 100%;
+    min-width: 200px;
+}
+
+/************** CARDS **************/
+.card-wrap {
+    /* List card elements next to each other, but wrap if there isn't enough space */
+    display: inline-block;
+}
+
+.card {
+    width: 400px;
+    max-width: 100%;
+    display: inline-block;
+    background: #334155;
+    border: 1px solid #1E293B;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.card iframe {
+    /* Tell the <iframe>s to fill the entire width of the card */
+    width: 100%;
+
+    min-height: 220px;
+}
+
+/************** ALERT BOX **************/
+.alert {
+    /* This sets the width of the box to the minimum necessary to cover the text */
+    display: inline-block;
+
+    background: #FEF3C7;
+    border-left: 7px solid #FBBF24;
+    padding: 1rem 1.5rem;
+}
+
+.alert-title {
+    color: #9c6d06;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.alert-body {
+    color: #181818;
+}
+
+ul.alert-body {
+    /* <ul>s with the `alert-body` class should have their margins removed */
+    margin: 0;
+}

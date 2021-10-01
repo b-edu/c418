@@ -1,0 +1,17 @@
+- Learn more about this group/person's work
+- See example of their work/artistry, Read media stories about the, view video content related to them
+- Learn more about the event/location/cost/date ( list 3 dates/locations)
+- Purchase tickets and have e-tickets sent to email ( the backend won't work that's ok)
+- Find COVID-19 related attendance policies
+
+Use:
+[x] img
+[x] forms
+[x] div
+[x] iframe
+[x] src
+[x] css flexbox
+[x] interactive elements
+[x] top navigation bar
+[x] HTML/CSS as seperate files
+[x] HTML/CSS files should contain comments to differentiate code for different areas
